@@ -56,7 +56,7 @@ You may want to do check the differences between changed files, you can do this 
 git diff
 ```
 
-Add all changes ready to commit. (You may not want to add all changed files, in this case please follow instructions to add single files to commit by typing git add alone). To repeat, the following will add all changes shown by using git status to your commit.
+Add all changes ready to commit. (You may not want to add all changed files, in this case please follow instructions to add single files to commit that you were shown using git status). To repeat, the following will add all changes shown by using git status to your commit.
 
 ```
 git add .
