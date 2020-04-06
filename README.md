@@ -41,13 +41,13 @@ Please read the [CONTRIBUTING](https://github.com/COVID19-Medical-Support-System
 
 # Versioning
 
-We use SemVer for versioning. For the versions available, see [Releases](https://github.com/COVID19-Medical-Support-System-Server/releases "Releases").
+We use SemVer for versioning. For the versions available, see [Releases](https://github.com/COVID-19-AI-Research-Project/COVID19-Medical-Support-System-Server/releases "Releases").
 
 &nbsp;
 
 # License
 
-This project is licensed under the **MIT License** - see the [LICENSE](https://github.com/COVID19-Medical-Support-System-Server/blob/master/LICENSE "LICENSE") file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](https://github.com/COVID-19-AI-Research-Project/COVID19-Medical-Support-System-Server/blob/master/LICENSE "LICENSE") file for details.
 
 &nbsp;
 
