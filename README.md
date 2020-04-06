@@ -4,7 +4,7 @@
 
 [![GeniSysAI Server](Media/Images/covid-19-ai-research.png)](https://github.com/COVID-19-AI-Research-Project/COVID19-Medical-Support-System-Server)
 
-[![CURRENT DEV BRANCH](https://img.shields.io/badge/UPCOMING%20RELEASE-0.1.0-blue.svg)](https://github.com/COVID-19-AI-Research-Project/COVID19-Medical-Support-System-Server/tree/0.1.0)
+[![CURRENT DEV BRANCH](https://img.shields.io/badge/UPCOMING%20DEV%20BRANCH-0.1.0-blue.svg)](https://github.com/COVID-19-AI-Research-Project/COVID19-Medical-Support-System-Server/tree/0.1.0)
 
 # Introduction
 
