@@ -18,7 +18,7 @@ This project leverages [GeniSysAI](https://github.com/GeniSysAI/ "GeniSysAI"), a
 
 For this project we will create our own systems, as well as system previously created in the GeniSysAI project.
 
-# About GeniSysAI Server
+### About GeniSysAI Server
 [GeniSysAI Server](https://github.com/GeniSysAI/Server "GeniSysAI Server") is a customisable management system for [GeniSysAI](https://github.com/GeniSysAI/Server "GeniSysAI") networks. The GeniSys management system is built on top of [Ubuntu 18.04.1 LTS (Bionic Beaver)](http://releases.ubuntu.com/18.04/ "Ubuntu 18.04.1 LTS (Bionic Beaver)"), but there should be no issues using other Linux operating systems. The server uses a secure PHP/MySql Nginx server, [Let’s Encrypt](https://letsencrypt.org/ "Let’s Encrypt") for free SSL encryption, and free IoT connectivity via the [iotJumpWay](https://www.iotJumpWay.com "iotJumpWay").
 
 [![GeniSysAI Server](Media/Images/GeniSysHome.jpg)](https://github.com/GeniSysAI/Server)
