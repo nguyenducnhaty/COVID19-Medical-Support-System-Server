@@ -8,22 +8,30 @@
 
 # Introduction
 
-The Peter Moss COVID-19 Medical Support System Server is a locally hosted, online medical support system, providing an easy to use control panel to communicate with, monitor and control Peter Moss COVID-19 AI Research Project projects such as the [COVID-19 Emergency Assistance Robot](https://github.com/COVID-19-AI-Research-Project/COVID19-Emegency-Assistance-Robot "COVID-19 Emergency Assistance Robot") and the [COVID-19 IoT Devices](https://github.com/COVID-19-AI-Research-Project/COVID19-IoT-Devices "COVID-19 IoT Devices") & AI projects.
+The Peter Moss COVID-19 Medical Support System Server is a locally hosted, secure NGINX server powering an online medical support system based on [GeniSysAI](https://github.com/GeniSysAI/ "GeniSysAI"). The server and support system provide an easy to use control panel to communicate with, monitor and control Peter Moss COVID-19 AI Research Project projects such as the [COVID-19 Emergency Assistance Robot](https://github.com/COVID-19-AI-Research-Project/COVID19-Emegency-Assistance-Robot "COVID-19 Emergency Assistance Robot"),  the [COVID-19 IoT Devices](https://github.com/COVID-19-AI-Research-Project/COVID19-IoT-Devices "COVID-19 IoT Devices") & AI projects.
+ 
+The COVID-19 Medical Support System is the server/network control panel providing direct access, monitoring and controlling of all Peter Moss COVID-19 AI Research Project projects. In addition to hosting the control panel, the NGINX server acts a proxy to IoT devices on the local network, allowing them to be accessed from the outside world securely, and to host API's allowing access to AI models. 
 
-## GeniSysAI
+IoT connection is also secure and managed via the [iotJumpWay](https://www.iotJumpWay.com "iotJumpWay"), future releases will include a secure local MQTT broker built into the project with the option to bridge to the iotJumpWay for additional features.
+
+# GeniSysAI
 
 [![GeniSysAI Server](Media/Images/GeniSys.png)](https://github.com/GeniSysAI/)
 
-This project leverages [GeniSysAI](https://github.com/GeniSysAI/ "GeniSysAI"), an open source Artificial Intelligence Assistant Network using Computer Vision, Natural Linguistics and the Internet of Things. GeniSysAI uses a system based on [TASS A.I](https://github.com/TASS-AI/TASS-Facenet "TASS A.I") for [vision](https://github.com/GeniSysAI/Vision "vision"), an [NLU engine](https://github.com/GeniSysAI/NLU "NLU engine") for natural language understanding, in browser speech synthesis and speech recognition for speech and hearing, all homed on a dedicated Linux server in your office and managed via a secure UI.
+This project leverages [GeniSysAI](https://github.com/GeniSysAI/ "GeniSysAI"), an open source Artificial Intelligence Assistant Network using Computer Vision, Natural Linguistics and the Internet of Things. GeniSysAI uses a system based on [TASS A.I](https://github.com/TASS-AI/TASS-Facenet "TASS A.I") for [vision](https://github.com/GeniSysAI/Vision "vision"), an [NLU engine](https://github.com/GeniSysAI/NLU "NLU engine") for natural language understanding, in browser speech synthesis and speech recognition for vocal interaction with the network, and is all homed on a dedicated Linux server on your own premises.
 
-For this project we will create our own systems, as well as system previously created in the GeniSysAI project.
-
-# About GeniSysAI Server
+## About GeniSysAI Server
 [GeniSysAI Server](https://github.com/GeniSysAI/Server "GeniSysAI Server") is a customisable management system for [GeniSysAI](https://github.com/GeniSysAI/Server "GeniSysAI") networks. The GeniSys management system is built on top of [Ubuntu 18.04.1 LTS (Bionic Beaver)](http://releases.ubuntu.com/18.04/ "Ubuntu 18.04.1 LTS (Bionic Beaver)"), but there should be no issues using other Linux operating systems. The server uses a secure PHP/MySql Nginx server, [Let’s Encrypt](https://letsencrypt.org/ "Let’s Encrypt") for free SSL encryption, and free IoT connectivity via the [iotJumpWay](https://www.iotJumpWay.com "iotJumpWay").
 
 [![GeniSysAI Server](Media/Images/GeniSysHome.jpg)](https://github.com/GeniSysAI/Server)
 
-Although the completed GeniSys Server will be accessible via the outside world, this is only to help ensure encrypted traffic over your local network. The Nginx server will proxy traffic to your internal IPs for features such as the local NLU, the local TASS system is designed to access the local camera of the device the program is running on.
+Although the completed GeniSys Server will be accessible via the outside world, this is only to help ensure encrypted traffic to devices on your local network and web systems. 
+
+&nbsp;
+
+# The COVID-19 Medical Support System Server
+
+- Installation: Please follow the [Installation Guide](Documentation/Installation.md "Installation Guide")
 
 &nbsp;
 
