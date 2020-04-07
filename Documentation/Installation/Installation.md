@@ -2,7 +2,7 @@
 
 ## COVID-19 Medical Support System Server
 
-[![GeniSysAI Server](../Media/Images/covid-19-ai-research.png)](https://github.com/COVID-19-AI-Research-Project/COVID19-Medical-Support-System-Server)
+[![GeniSysAI Server](../../Media/Images/covid-19-ai-research.png)](https://github.com/COVID-19-AI-Research-Project/COVID19-Medical-Support-System-Server)
 
 # Installation & Setup
 The following guide will take you through setting up and installing the  [COVID-19 Medical Support System Server](https://github.com/COVID-19-AI-Research-Project/COVID19-Emegency-Assistance-Robot "COVID-19 Medical Support System Server").  
@@ -149,6 +149,43 @@ Finally, create the required database:
 ```
  mysql> CREATE DATABASE YourDatabaseName
 ``` 
+
+### PHP
+Now you will install PHP on your server. Follow the commands below and complete any required steps for the installation to accomplish this. You may need to swap 7.2 in the second command depending on what version of php-fpm is installed.
+
+```
+sudo apt-get install php-fpm php-mysql
+sudo nano /etc/php/7.2/fpm/php.ini
+```
+
+You should now be in the nano editing window, find  **cgi.fix_pathinfo** and change the value to 0
+
+```
+cgi.fix_pathinfo=0
+```
+
+Then restart PHP:
+
+```
+sudo systemctl restart php7.2-fpm
+```
+
+Now create a file in the public html directory called info.php. The following command will open the new file for editing:
+
+```
+sudo nano /var/www/html/info.php
+```
+
+Then you need to add the following code:
+
+```
+<?php
+    phpinfo();
+```
+
+If you now visit the info page your website ie: https://www.YourDomain.com/info you should see the PHP configuration of your server.
+
+![GeniSys AI Server PHP config](../../Media/Images/php.png)
 
 &nbsp;
 
