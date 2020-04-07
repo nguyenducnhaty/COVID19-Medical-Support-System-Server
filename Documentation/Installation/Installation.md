@@ -14,6 +14,26 @@ For this project, the operating system of choice is  [Ubuntu 18.04.1 LTS (Bionic
 
 &nbsp;
 
+# Setup iotJumpWay
+
+[![iotJumpWay](../../Media/Images/iotJumpWay.png)](https://www.iotJumpWay.com/console)
+
+Now you need to install the iotJumpWay and setup some appications and devices. The following part of the tutorial will guide you through this. 
+
+- [Find out about the iotJumpWay](https://www.iotjumpway.com/how-it-works "Find out about the iotJumpWay") 
+- [Find out about the iotJumpWay Dev Program](https://www.iotjumpway.com/developers/ "Find out about the iotJumpWay Dev Program") 
+- [Get started with the iotJumpWay Dev Program](https://www.iotjumpway.com/developers/getting-started "Get started with the iotJumpWay Dev Program") 
+
+First of all you should [register your free iotJumpWay account](https://www.iotjumpway.com/console/register "register your free iotJumpWay account"), all services provided by the iotJumpWay are also entirely free within fair limits. Once you have registered you need to:
+
+- Create your iotJumpWay location [(Documentation)](https://www.iotjumpway.com/developers/getting-started-locations "(Documentation)") 
+- Create your iotJumpWay zone [(Documentation)](https://www.iotjumpway.com/developers/getting-started-zones "(Documentation)")  
+- Create your iotJumpWay application [(Documentation)](https://www.iotjumpway.com/developers/getting-started-applications "(Documentation)") 
+
+The installation process will install the iotJumpWay MQTT library further on in the tutorial.
+
+&nbsp;
+
 # Setup Domain Name
 Now is as good a time as any to sort out and configure a domain name. You need to have your domain already hosted on a hosting account, from there edit the DNS zone by adding an A record to your public IP, for this you need a static IP or IP software that will update the IP in the DNZ Zone each time it changes. You add your IP as an A record and save your DNS Zone.
 
@@ -203,6 +223,13 @@ sudo ln -s /usr/share/phpmyadmin /var/www/html
 Now you should be able to visit phpMyAdmin by accessing the relevant directory on your website. IE: https://www.YourDomain.com/phpmyadmin/index.php 
 
 ![GeniSys AI Server PHP config](../../Media/Images/phpMyAdmin.png)
+
+### phpMyAdmin
+Now you should install the iotJumpWay MQTT library.
+ 
+```
+pip install JumpWayMQTT
+```
 
 &nbsp;
 
