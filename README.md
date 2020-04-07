@@ -16,14 +16,14 @@ IoT connection is also secure and managed via the [iotJumpWay](https://www.iotJu
 
 # GeniSysAI
 
-[![GeniSysAI Server](Media/Images/GeniSys.png)](https://github.com/GeniSysAI/)
+![GeniSysAI Server](Media/Images/GeniSys.png)
 
 This project leverages [GeniSysAI](https://github.com/GeniSysAI/ "GeniSysAI"), an open source Artificial Intelligence Assistant Network using Computer Vision, Natural Linguistics and the Internet of Things. GeniSysAI uses a system based on [TASS A.I](https://github.com/TASS-AI/TASS-Facenet "TASS A.I") for [vision](https://github.com/GeniSysAI/Vision "vision"), an [NLU engine](https://github.com/GeniSysAI/NLU "NLU engine") for natural language understanding, in browser speech synthesis and speech recognition for vocal interaction with the network, and is all homed on a dedicated Linux server on your own premises.
 
 ## About GeniSysAI Server
 [GeniSysAI Server](https://github.com/GeniSysAI/Server "GeniSysAI Server") is a customisable management system for [GeniSysAI](https://github.com/GeniSysAI/Server "GeniSysAI") networks. The GeniSys management system is built on top of [Ubuntu 18.04.1 LTS (Bionic Beaver)](http://releases.ubuntu.com/18.04/ "Ubuntu 18.04.1 LTS (Bionic Beaver)"), but there should be no issues using other Linux operating systems. The server uses a secure PHP/MySql Nginx server, [Let’s Encrypt](https://letsencrypt.org/ "Let’s Encrypt") for free SSL encryption, and free IoT connectivity via the [iotJumpWay](https://www.iotJumpWay.com "iotJumpWay").
 
-[![GeniSysAI Server](Media/Images/GeniSysHome.jpg)](https://github.com/GeniSysAI/Server)
+![GeniSysAI Server](Media/Images/GeniSysHome.jpg)
 
 Although the completed GeniSys Server will be accessible via the outside world, this is only to help ensure encrypted traffic to devices on your local network and web systems. 
 
@@ -31,7 +31,7 @@ Although the completed GeniSys Server will be accessible via the outside world, 
 
 # The COVID-19 Medical Support System Server
 
-- Installation: Please follow the [Installation Guide](Documentation/Installation.md "Installation Guide")
+- Installation: Please follow the [Installation Guide](Documentation/Installation/Installation.md "Installation Guide")
 
 &nbsp;
 
