@@ -109,6 +109,47 @@ sudo ufw enable
 sudo ufw status
 ```
 
+### MySql
+Now it is time to install MySql on your server. Follow the commands below and complete any required steps for the installation to accomplish this. 
+
+**Make sure you keep note of all passwords etc you create.**
+
+**Hints:**
+
+- Do not set up VALIDATE PASSWORD plugin
+- Remove anonymous users
+- Root restricted to local host
+- Remove test database
+
+```
+sudo apt-get install mysql-server
+sudo mysql_secure_installation
+```
+
+Now create a user and password that we will use for phpMyAdmin, first login in with the root MySql username you created earlier and then enter the password when prompted, this will log you into MySql as that user.
+
+```
+ mysql -u YourMySqlRootUser -p
+```
+
+Now we can create a user with the required permissions to manage phpMyAdmin, make sure you remember the credentials you create with the below command.
+
+```
+ mysql> GRANT ALL ON *.* TO 'YourNewUsername'@'localhost' IDENTIFIED BY 'YourNewPassword';
+```
+
+Also create a user for your application database.
+
+```
+ mysql> GRANT SELECT, INSERT, DELETE  ON *.* TO 'YourNewUsername'@'localhost' IDENTIFIED BY 'YourNewPassword';
+```
+
+Finally, create the required database:
+
+```
+ mysql> CREATE DATABASE YourDatabaseName
+``` 
+
 &nbsp;
 
 # Contributing
