@@ -36,6 +36,12 @@ if [ "$cmsg" = "Y" -o "$cmsg" = "y" ]; then
         exit
     fi 
 
+    sh Scripts/Installation/phpMyAdmin.sh 
+    if [ $? -ne 0 ]; then
+        echo "- GeniSysAI installation terminated";
+        exit
+    fi 
+
 else
     echo "- GeniSysAI installation terminated";
     exit
